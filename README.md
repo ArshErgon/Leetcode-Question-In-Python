@@ -10,4 +10,4 @@ Some rules:
 
 #Leetcode ID
 
-[ArshErgon](https://leetcode.com/arshergon/)
+1. [ArshErgon](https://leetcode.com/arshergon/)
