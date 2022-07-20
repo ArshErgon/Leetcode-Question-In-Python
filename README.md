@@ -6,3 +6,6 @@ Some rules:
 1. You have to commit every single day, even if you have written a single you have to push it here.
 2. You have to push you code in a separate branch, after that I will accept it from there.
 3. Show this thing in your resume.
+4. Add your leetcode ID
+
+(ArshErgon)[https://leetcode.com/arshergon/]
