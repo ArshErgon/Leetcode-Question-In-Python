@@ -8,4 +8,4 @@ Some rules:
 3. Show this thing in your resume.
 4. Add your leetcode ID
 
-(ArshErgon)[https://leetcode.com/arshergon/]
+[ArshErgon](https://leetcode.com/arshergon/)
