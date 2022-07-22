@@ -1,9 +1,16 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class Node:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+treeNode = Node(1)
+treeNode.left = Node(2)
+treeNode.right = Node(3)
+treeNode.left.left = Node(4)
+treeNode.left.right = Node(5)
+
 class Solution:
     def diameterOfBinaryTree(self, root) -> int:
         if not root:
@@ -35,6 +42,9 @@ class Solution:
         return height 
        
     def diameterOfTreeRecursive(self, root):
+        if not root:
+            return 0
+       
         maxVal = 0
         def findLeftAndRightNode(root):
             nonlocal maxVal
@@ -47,8 +57,11 @@ class Solution:
             maxVal = max(maxVal, 2 + (left + right))
             
             return max(left, right) + 1
-        return maxVal
         
         findLeftAndRightNode(root)
         
         return maxVal
+
+
+
+print(Solution().diameterOfTreeRecursive(treeNode))
